@@ -3,64 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamdy Sabry | Flutter Developer</title>
+  <title>Hamdy Sabry | DevOps Engineer & Flutter Developer</title>
+  <meta name="description" content="Hamdy Sabry Ali — DevOps engineer and Flutter developer. Back Office Engineer at Huawei. AWS, Docker, Kubernetes, Terraform, Jenkins CI/CD, and Flutter apps published on the App Store." />
+  <meta property="og:title" content="Hamdy Sabry | DevOps Engineer & Flutter Developer" />
+  <meta property="og:description" content="DevOps engineer (AWS, Docker, Kubernetes, Terraform, CI/CD) and Flutter developer with two apps published on the App Store." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hamdysabry.github.io/hamdy-sabry/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-    
+
     body {
       font-family: "Roboto", sans-serif;
     }
-    
+
     .gradient-bg {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
-    
+
     .card-hover {
       transition: all 0.3s ease;
     }
-    
+
     .card-hover:hover {
       transform: translateY(-5px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
-    
+
     .skill-tag {
       background: linear-gradient(45deg, #667eea, #764ba2);
       transition: all 0.3s ease;
     }
-    
+
     .skill-tag:hover {
       transform: scale(1.05);
       box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
     }
-    
+
     .floating {
       animation: floating 3s ease-in-out infinite;
     }
-    
+
     @keyframes floating {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
     }
-    
+
     .pulse-border {
       animation: pulse-border 2s infinite;
     }
-    
+
     @keyframes pulse-border {
       0% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
       70% { box-shadow: 0 0 0 10px rgba(102, 126, 234, 0); }
       100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
     }
-    
+
     .text-gradient {
       background: linear-gradient(45deg, #667eea, #764ba2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+    }
+
+    /* orange is missing from the Tailwind 2.2.19 CDN build, define it here */
+    .bg-orange-500 { background-color: rgba(249,115,22,1); }
+    .from-orange-50 { --tw-gradient-from: #fff7ed; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255,247,237,0)); }
+    .to-orange-50 { --tw-gradient-to: #fff7ed; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .floating, .pulse-border { animation: none !important; }
+      .card-hover, .skill-tag, a { transition: none !important; }
+      [data-aos] { opacity: 1 !important; transform: none !important; transition: none !important; }
+    }
+
+    .app-shot {
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #fff;
     }
   </style>
 </head>
@@ -75,24 +102,24 @@
           <div class="floating absolute top-8 right-8 w-12 h-12 bg-white rounded-full" style="animation-delay: 1s;"></div>
           <div class="floating absolute bottom-4 left-1/3 w-16 h-16 bg-white rounded-full" style="animation-delay: 2s;"></div>
         </div>
-        
+
         <div class="relative z-10">
           <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center pulse-border">
             <i class="fas fa-code text-4xl text-purple-600"></i>
           </div>
           <h1 class="text-4xl font-bold mb-2" data-aos="fade-up" data-aos-delay="200">Hamdy Sabry Ali</h1>
-          <p class="text-xl mb-4 opacity-90" data-aos="fade-up" data-aos-delay="400">Flutter Developer</p>
+          <p class="text-xl mb-4 opacity-90" data-aos="fade-up" data-aos-delay="400">DevOps Engineer &amp; Flutter Developer</p>
           <div class="flex flex-wrap justify-center gap-4 text-sm" data-aos="fade-up" data-aos-delay="600">
-            <a href="mailto:hamd9r0y0@gmail.com" class="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full hover:bg-opacity-30 transition-all">
+            <a href="mailto:hamdysabryali@gmail.com" class="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full hover:bg-opacity-30 transition-all">
               <i class="fas fa-envelope"></i>
-              hamd9r0y0@gmail.com
+              hamdysabryali@gmail.com
             </a>
             <a href="tel:+201141495815" class="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full hover:bg-opacity-30 transition-all">
               <i class="fas fa-phone"></i>
               +20 114 149 5815
             </a>
           </div>
-          <div class="flex justify-center gap-4 mt-4" data-aos="fade-up" data-aos-delay="800">
+          <div class="flex flex-wrap justify-center gap-4 mt-4" data-aos="fade-up" data-aos-delay="800">
             <a href="https://linkedin.com/in/hamdy-sabry-0bb006231" class="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full hover:bg-opacity-30 transition-all">
               <i class="fab fa-linkedin"></i>
               LinkedIn
@@ -100,6 +127,10 @@
             <a href="https://github.com/hamdysabry" class="flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full hover:bg-opacity-30 transition-all">
               <i class="fab fa-github"></i>
               GitHub
+            </a>
+            <a href="Hamdy_Sabry_CV.pdf" class="flex items-center gap-2 bg-white text-purple-600 px-4 py-2 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+              <i class="fas fa-file-arrow-down"></i>
+              Download CV
             </a>
           </div>
         </div>
@@ -114,7 +145,7 @@
           Summary
         </h2>
         <p class="text-lg leading-relaxed text-gray-700">
-          I am a Flutter developer with 2.5+ years of experience in designing, developing, and maintaining scalable mobile applications. I deliver high-quality code, optimize performance, and lead development workflows, focusing on user experience and deadlines.
+          I am a DevOps engineer and Flutter developer, currently working as a Back Office Engineer at Huawei. I build and automate cloud infrastructure with AWS, Docker, Kubernetes, Terraform and Jenkins, and I develop mobile apps with Flutter, with two apps published on the App Store. I focus on reliable systems, clean code and delivering on time.
         </p>
       </div>
     </section>
@@ -126,120 +157,87 @@
           <i class="fas fa-cogs"></i>
           Technical Skills
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h3 class="text-lg font-semibold mb-3 text-gray-600 flex items-center gap-2">
+          <i class="fas fa-cloud"></i>
+          DevOps &amp; Cloud
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="100">
-            <i class="fab fa-flutter mr-2"></i>
-            Flutter & Dart
+            <i class="fab fa-aws mr-2"></i>
+            AWS
+          </div>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="150">
+            <i class="fab fa-docker mr-2"></i>
+            Docker
           </div>
           <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fab fa-java mr-2"></i>
-            Java & OOP
+            <i class="fas fa-dharmachakra mr-2"></i>
+            Kubernetes
+          </div>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="250">
+            <i class="fas fa-layer-group mr-2"></i>
+            Terraform
           </div>
           <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-jenkins mr-2"></i>
+            Jenkins &amp; CI/CD
+          </div>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="350">
             <i class="fab fa-git-alt mr-2"></i>
-            Git & CI/CD
+            Git
           </div>
           <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="400">
-            <i class="fas fa-cubes mr-2"></i>
-            Bloc & MVVM
+            <i class="fab fa-linux mr-2"></i>
+            Linux
           </div>
-          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="500">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="450">
+            <i class="fas fa-terminal mr-2"></i>
+            Bash &amp; Python
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-3 text-gray-600 flex items-center gap-2">
+          <i class="fas fa-mobile-alt"></i>
+          Flutter &amp; Mobile
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-dove mr-2"></i>
+            Flutter &amp; Dart
+          </div>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-cubes mr-2"></i>
+            Bloc &amp; MVVM
+          </div>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="300">
             <i class="fas fa-fire mr-2"></i>
             Firebase
           </div>
-          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="600">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="400">
             <i class="fas fa-exchange-alt mr-2"></i>
             REST APIs
           </div>
-          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="700">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="500">
             <i class="fas fa-map-marked-alt mr-2"></i>
             Google Maps
           </div>
-          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="800">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="600">
             <i class="fas fa-mobile-alt mr-2"></i>
             Responsive UI
           </div>
-          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="900">
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="700">
             <i class="fas fa-language mr-2"></i>
             Localization
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-        <h2 class="text-2xl font-bold mb-6 text-gradient flex items-center gap-3">
-          <i class="fas fa-project-diagram"></i>
-          Projects
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="100">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                <i class="fas fa-newspaper text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold">News App</h3>
-            </div>
-            <p class="text-sm text-gray-600 mb-2">Flutter, Bloc, REST APIs</p>
-            <p class="text-gray-700 mb-4">Browse and filter global news, with direct links to sources.</p>
-            <a href="https://github.com/hamdysabry/news" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-          </div>
-          
-          <div class="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="200">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                <i class="fas fa-tasks text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold">Todo App</h3>
-            </div>
-            <p class="text-sm text-gray-600 mb-2">Flutter, Provider, Firebase</p>
-            <p class="text-gray-700 mb-4">Organize tasks by date, mark as complete, user authentication.</p>
-            <a href="https://github.com/hamdysabry/todo_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-          </div>
-          
-          <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="300">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
-                <i class="fas fa-mosque text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold">Islami App</h3>
-            </div>
-            <p class="text-sm text-gray-600 mb-2">Flutter, Bloc, Provider</p>
-            <p class="text-gray-700 mb-4">Islamic tools app with dark/light mode and multilingual support.</p>
-            <a href="https://github.com/hamdysabry/islami_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-          </div>
-          
-          <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="400">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
-                <i class="fas fa-comments text-white"></i>
-              </div>
-              <h3 class="text-xl font-bold">Contact App</h3>
-            </div>
-            <p class="text-sm text-gray-600 mb-2">Flutter, Firebase Auth, Messaging</p>
-            <p class="text-gray-700 mb-4">Real-time 1-to-1 chat with theming and localization.</p>
-            <a href="https://github.com/hamdysabry/contact_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
+          <div class="skill-tag text-white px-4 py-3 rounded-xl text-center font-semibold" data-aos="zoom-in" data-aos-delay="800">
+            <i class="fab fa-java mr-2"></i>
+            Java &amp; OOP
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
       <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
         <h2 class="text-2xl font-bold mb-6 text-gradient flex items-center gap-3">
           <i class="fas fa-briefcase"></i>
@@ -247,15 +245,25 @@
         </h2>
         <div class="space-y-6">
           <div class="border-r-4 border-purple-500 pr-6" data-aos="slide-right" data-aos-delay="100">
+            <h3 class="text-xl font-bold mb-2">Back Office Engineer, Huawei</h3>
+            <p class="text-gray-600 mb-3">Cairo, Egypt · Mar 2026 – Present</p>
+            <p class="text-gray-700">Back office engineering with a DevOps focus: AWS, Docker, Kubernetes and Terraform.</p>
+          </div>
+          <div class="border-r-4 border-purple-500 pr-6" data-aos="slide-right" data-aos-delay="200">
             <h3 class="text-xl font-bold mb-2">Freelance Flutter Developer</h3>
-            <p class="text-gray-600 mb-3">Remote · 2024 – 2025</p>
+            <p class="text-gray-600 mb-3">Remote · 2024 – Present</p>
             <div class="space-y-4">
               <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-4 rounded-lg">
                 <h4 class="font-semibold mb-2 flex items-center gap-2">
                   <i class="fas fa-mobile-alt text-purple-600"></i>
                   Rattel App
                 </h4>
-                <p class="text-sm text-gray-700 mb-2">Islamic app using voice to identify Quran reciters.</p>
+                <p class="text-sm text-gray-700 mb-2">Islamic app that identifies the Quran reciter by listening to the recitation through the microphone. Listening interface with audio indicator, surah details, history tab, and settings for account, language and dark mode. Built with Flutter, Firebase Auth, REST API integration, MVVM, Bloc/Provider and localization.</p>
+                <div class="grid grid-cols-3 gap-3 my-3">
+                  <img src="images/rattel-home.png" alt="Rattel app, home and listening screen" class="app-shot" />
+                  <img src="images/rattel-history.png" alt="Rattel app, history screen" class="app-shot" />
+                  <img src="images/rattel-settings.png" alt="Rattel app, settings screen" class="app-shot" />
+                </div>
                 <a href="https://apps.apple.com/eg/app/rattel-%D8%B1%D8%AA%D9%84/id6740941040" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm font-semibold">
                   <i class="fab fa-apple"></i>
                   App Store
@@ -278,12 +286,154 @@
       </div>
     </section>
 
+    <!-- DevOps Projects -->
+    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+        <h2 class="text-2xl font-bold mb-6 text-gradient flex items-center gap-3">
+          <i class="fas fa-cloud"></i>
+          DevOps Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="100">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-blog text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Full-Stack App on AWS EKS</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Docker, Jenkins, Kubernetes, Terraform</p>
+            <p class="text-gray-700 mb-4">Full-stack blogging app deployed with a complete DevOps workflow: Docker image, Jenkins pipeline, and Kubernetes deployment on AWS EKS provisioned with Terraform.</p>
+            <a href="https://github.com/hamdysabry/FullStack-Blogging-App-DevOps" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="200">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="fab fa-jenkins text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Jenkins CI/CD Pipeline</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Jenkins, Maven, SonarQube, Helm, Argo CD</p>
+            <p class="text-gray-700 mb-4">End-to-end Jenkins pipeline for a Java application: build and test with Maven, code analysis with SonarQube, and deployment to Kubernetes with Helm and Argo CD.</p>
+            <a href="https://github.com/hamdysabry/ci-cd" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="300">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                <i class="fab fa-aws text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">AWS End-to-End Infrastructure</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Terraform, AWS</p>
+            <p class="text-gray-700 mb-4">End-to-end AWS infrastructure as code with Terraform: remote state backend, reusable variables and outputs.</p>
+            <a href="https://github.com/hamdysabry/aws-devops-end-to-end" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="400">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-layer-group text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Terraform AWS Lab</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Terraform, VPC, EC2, ALB</p>
+            <p class="text-gray-700 mb-4">AWS network and compute lab in Terraform: VPC with public and private subnets, NAT gateway, security groups, EC2 web server and an Application Load Balancer.</p>
+            <a href="https://github.com/hamdysabry/terraform-project" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flutter Projects -->
+    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+      <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+        <h2 class="text-2xl font-bold mb-6 text-gradient flex items-center gap-3">
+          <i class="fas fa-project-diagram"></i>
+          Flutter Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="100">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-newspaper text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">News App</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Flutter, Bloc, REST APIs</p>
+            <p class="text-gray-700 mb-4">Browse and filter global news, with direct links to sources.</p>
+            <a href="https://github.com/hamdysabry/news" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="200">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-tasks text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Todo App</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Flutter, Provider, Firebase</p>
+            <p class="text-gray-700 mb-4">Organize tasks by date, mark as complete, user authentication.</p>
+            <a href="https://github.com/hamdysabry/todo_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl card-hover" data-aos="flip-left" data-aos-delay="300">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-mosque text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Islami App</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Flutter, Bloc, Provider</p>
+            <p class="text-gray-700 mb-4">Islamic tools app with dark/light mode and multilingual support.</p>
+            <a href="https://github.com/hamdysabry/islami_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl card-hover" data-aos="flip-right" data-aos-delay="400">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-comments text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Contact App</h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-2">Flutter, Firebase Auth, Messaging</p>
+            <p class="text-gray-700 mb-4">Real-time 1-to-1 chat with theming and localization.</p>
+            <a href="https://github.com/hamdysabry/contact_app" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Education -->
-    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+    <section class="mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
       <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
         <h2 class="text-2xl font-bold mb-6 text-gradient flex items-center gap-3">
           <i class="fas fa-graduation-cap"></i>
-          Education & Certifications
+          Education &amp; Certifications
         </h2>
         <div class="space-y-4">
           <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg" data-aos="slide-left" data-aos-delay="100">
@@ -291,11 +441,21 @@
               <i class="fas fa-university text-white"></i>
             </div>
             <div>
-              <h3 class="font-semibold">BSc in IT</h3>
+              <h3 class="font-semibold">BSc in Information Technology</h3>
               <p class="text-sm text-gray-600">Faculty of Computers and Information, Zagazig University (2025)</p>
             </div>
           </div>
-          
+
+          <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg" data-aos="slide-right" data-aos-delay="150">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-network-wired text-white"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold">DevSecOps Professional (288-hour program)</h3>
+              <p class="text-sm text-gray-600">National Telecommunication Institute (NTI), Oct–Dec 2025</p>
+            </div>
+          </div>
+
           <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg" data-aos="slide-right" data-aos-delay="200">
             <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
               <i class="fas fa-certificate text-white"></i>
@@ -305,24 +465,24 @@
               <p class="text-sm text-gray-600">Route IT Training Center (July 2023)</p>
             </div>
           </div>
-          
+
           <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg" data-aos="slide-left" data-aos-delay="300">
             <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
               <i class="fas fa-award text-white"></i>
             </div>
             <div>
-              <h3 class="font-semibold">Advanced Flutter (Bloc & MVVM)</h3>
-              <p class="text-sm text-gray-600">Udemy – Oct 2024</p>
+              <h3 class="font-semibold">Advanced Flutter (Bloc &amp; MVVM)</h3>
+              <p class="text-sm text-gray-600">Udemy, Oct 2024</p>
             </div>
           </div>
-          
+
           <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg" data-aos="slide-right" data-aos-delay="400">
             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
               <i class="fas fa-mobile-alt text-white"></i>
             </div>
             <div>
               <h3 class="font-semibold">Responsive UI in Flutter</h3>
-              <p class="text-sm text-gray-600">Udemy – Jan 2025</p>
+              <p class="text-sm text-gray-600">Udemy, Jan 2025</p>
             </div>
           </div>
         </div>
@@ -330,11 +490,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+    <footer class="text-center py-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
       <div class="gradient-bg rounded-2xl p-6 text-white">
         <p class="text-lg font-semibold mb-2">Ready to work on your next project?</p>
         <p class="mb-4 opacity-90">Let's connect and build something amazing together!</p>
-        <a href="mailto:hamd9r0y0@gmail.com" class="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+        <a href="mailto:hamdysabryali@gmail.com" class="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
           <i class="fas fa-envelope"></i>
           Contact Me
         </a>
@@ -345,13 +505,15 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
       once: true,
-      offset: 100
+      offset: 100,
+      disable: reduceMotion
     });
-    
+
     // Add smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -361,13 +523,13 @@
         });
       });
     });
-    
+
     // Add parallax effect to floating elements
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
       const parallax = document.querySelectorAll('.floating');
       const speed = 0.5;
-      
+
       parallax.forEach(element => {
         const yPos = -(scrolled * speed);
         element.style.transform = `translateY(${yPos}px)`;
@@ -376,4 +538,3 @@
   </script>
 </body>
 </html>
-
